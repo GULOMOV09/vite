@@ -1,0 +1,52 @@
+@import "./font/fonts.scss,./comman.scss";
+:root{
+  --bg: #F3EDF7;
+  --purple: #6750A4;
+  --text: #49454F;
+  --title: #1C1B1F;
+  --date: #CAC4D0;
+  --red: #CF1B1B;
+}
+.nav{
+   background: var(--bg);
+   padding: 15px 20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   &_lang{
+    position: relative;
+    min-width: 55px;
+    height: 30px;
+    &_btn{
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      position: absolute;
+      top: -100%;
+      left: 0;
+      transition: .5s;
+      &.active{
+        top: 0;
+        
+      }
+      img{
+        width: 26px;
+      }
+      span{
+        font-style: 20px;
+        font-weight: 500;
+      }
+    }
+   }
+   &_title{
+font-family: 'Roboto';
+font-size: 22px;
+font-weight: 400;
+text-align: center;
+
+   }
+   &_search{
+    font-size: 30px;
+    color: var(--text);
+   }
+}
